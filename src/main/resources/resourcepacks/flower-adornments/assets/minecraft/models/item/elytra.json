@@ -1,0 +1,74 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "item/elytra"
+  },
+  "overrides": [
+    {
+      "model": "cynic:item/elytra_flowers_dandelion",
+      "predicate": {
+        "trim_type": 0.3668321
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_poppy",
+      "predicate": {
+        "trim_type": 0.3668322
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_blue_orchid",
+      "predicate": {
+        "trim_type": 0.3668323
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_allium",
+      "predicate": {
+        "trim_type": 0.3668324
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_azure_bluet",
+      "predicate": {
+        "trim_type": 0.3668325
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_cornflower",
+      "predicate": {
+        "trim_type": 0.3668326
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_pink_petals",
+      "predicate": {
+        "trim_type": 0.3668327
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_torchflower",
+      "predicate": {
+        "trim_type": 0.3668328
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_flowering_azalea",
+      "predicate": {
+        "trim_type": 0.3668329
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_mangrove_propagule",
+      "predicate": {
+        "trim_type": 0.3668330
+      }
+    },
+    {
+      "model": "cynic:item/elytra_flowers_wither_rose",
+      "predicate": {
+        "trim_type": 0.3668331
+      }
+    }
+  ]
+}

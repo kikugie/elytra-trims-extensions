@@ -1,41 +1,35 @@
 {
-	"schemaVersion": 1,
-	"id": "modid",
-	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
-		]
-	},
-	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.14.21",
-		"minecraft": "~1.20.1",
-		"java": ">=17",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "elytra-trims-extensions",
+  "version": "${version}",
+  "name": "Elytra Trims Extensions",
+  "description": "Additional elytra textures for the Elytra Trims mod",
+  "authors": [
+    "KikuGie"
+  ],
+  "contact": {
+    "sources": "https://github.com/kikugie/elytra-trims-extensions",
+    "issues": "https://github.com/kikugie/elytra-trims-extensions/issues",
+    "homepage": "https://modrinth.com/mod/elytra-trims-extensions"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/elytra_trims_extensions/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.kikugie.elytra_trims_extensions.Loader"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.13",
+    "minecraft": ">=1.19.4",
+    "elytratrims": ">1.1.0",
+    "fabric-resource-loader-v0": "*"
+  },
+  "suggests": {
+    "geode_plus": ">=1.2.0"
+  },
+  "conflicts": {
+    "geode_plus": "<1.2.0"
+  }
 }

@@ -1,9 +1,17 @@
-# Fabric Example Mod
+# Elytra Trims Extensions
 
-## Setup
+Are default trims not enough? Or maybe your favourite mod adds more trims, but not for elytras?  
+Elytra Trims Extensions got you!
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+## Requirements
 
-## License
+Install main mod ([Elytra Trims](https://modrinth.com/mod/elytra-trims)) on your client.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+## Supported packs
+- [Geode+](https://www.curseforge.com/minecraft/mc-mods/geode-plus) 
+
+![](https://cdn.modrinth.com/data/5edtQ4at/images/fa44a44fc6c5aa2628584b3708754c81aed54e63.png)
+
+- [Flower Adornments](https://modrinth.com/datapack/armor-flower-adornments)
+
+![](https://cdn.modrinth.com/data/5edtQ4at/images/9afde7602bbc4dfa2afb2c0392deca34da62ba8a.png)
