@@ -1,9 +1,13 @@
 //file:noinspection GroovyAccessibility
+import net.darkhax.curseforgegradle.TaskPublishCurseForge
+
 plugins {
 	id 'fabric-loom' version '1.2-SNAPSHOT'
 	id 'maven-publish'
 	id "com.modrinth.minotaur" version "2.+"
 	id "co.uzzu.dotenv.gradle" version "2.0.0"
+	id "net.darkhax.curseforgegradle" version "1.1.+"
+	id "com.github.breadmoirai.github-release" version "2.4.+"
 }
 
 version = project.mod_version
@@ -59,10 +63,20 @@ jar {
 	}
 }
 
+def debug = false
+
+tasks.register("release") {
+	group "publishing"
+	dependsOn "modrinth"
+	dependsOn "githubRelease"
+	dependsOn "curseforge"
+	if (!debug) dependsOn "publish"
+}
+
 modrinth {
 	token = env.fetchOrNull("MODRINTH_TOKEN")
-	projectId = "elytra-trims"
-	versionName = "Elytra Trims Extensions" + project.mod_version
+	projectId = "elytra-trims-extensions"
+	versionName = "Elytra Trims Extensions " + project.mod_version
 	versionNumber = project.mod_version
 	versionType = "release"
 	uploadFile = remapJar
@@ -75,22 +89,59 @@ modrinth {
 	syncBodyFrom = rootProject.file("README.md").text
 	changelog = rootProject.file("CHANGELOG.md").text
 	failSilently = true
-	debugMode = true
+	debugMode = debug
+}
+
+githubRelease {
+	token = env.fetch("GITHUB_TOKEN", "")
+	owner = "kikugie"
+	repo = "elytra-trims-extensions"
+	tagName = "v${project.mod_version}"
+	targetCommitish = "main"
+	releaseName = "Elytra Trims Extensions " + project.mod_version
+	body = rootProject.file("CHANGELOG.md").text
+	releaseAssets = [remapJar, sourcesJar]
+	dryRun = debug
+}
+
+tasks.register("curseforge", TaskPublishCurseForge) {
+	group "publishing"
+	disableVersionDetection()
+	apiToken = env.fetch("CURSEFORGE_TOKEN", "")
+
+	def mainFile = upload(project.project_id, remapJar)
+	mainFile.releaseType = "release"
+	mainFile.displayName = "Elytra Trims Extensions " + project.mod_version
+	mainFile.changelog = rootProject.file("CHANGELOG.md").text
+	mainFile.changelogType = "markdown"
+	mainFile.addRequirement "elytra-trims"
+	mainFile.addModLoader "fabric", "quilt"
+	for (String version : project.modrinth_versions.split(" ")) {
+		mainFile.addGameVersion version
+	}
+	debugMode = debug
 }
 
 // configure the maven publication
 publishing {
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
+	repositories {
+		maven {
+			name = "kikugieMaven"
+			url = "https://maven.kikugie.dev/releases"
+			credentials(PasswordCredentials)
+			authentication {
+				basic(BasicAuthentication)
+			}
 		}
 	}
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
-	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+	publications {
+		mavenJava(MavenPublication) {
+			groupId = project.maven_group
+			artifactId = project.archives_base_name
+			version = project.mod_version
+
+			from components.java
+		}
 	}
 }

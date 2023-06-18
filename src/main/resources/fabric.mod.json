@@ -27,7 +27,8 @@
     "fabric-resource-loader-v0": "*"
   },
   "suggests": {
-    "geode_plus": ">=1.2.0"
+    "geode_plus": ">=1.2.0",
+    "more_armor_trims": ">=1.0.0"
   },
   "conflicts": {
     "geode_plus": "<1.2.0"

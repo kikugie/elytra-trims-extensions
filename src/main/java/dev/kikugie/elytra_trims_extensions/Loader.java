@@ -20,6 +20,7 @@ public class Loader implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         PACKS.put("geode-plus", () -> FabricLoader.getInstance().isModLoaded("geode_plus"));
+        PACKS.put("more-armor-trims", () -> FabricLoader.getInstance().isModLoaded("more_armor_trims"));
         PACKS.put("flower-adornments", () -> true);
 
         FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(container -> PACKS.forEach((pack, condition) -> {
