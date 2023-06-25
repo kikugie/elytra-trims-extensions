@@ -28,7 +28,7 @@
   },
   "suggests": {
     "geode_plus": ">=1.2.0",
-    "more_armor_trims": ">=1.0.0"
+    "more_armor_trims": ">=1.1.0"
   },
   "conflicts": {
     "geode_plus": "<1.2.0"

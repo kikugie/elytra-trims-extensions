@@ -12,10 +12,13 @@ Install main mod ([Elytra Trims](https://modrinth.com/mod/elytra-trims)) on your
 
 ![](https://cdn.modrinth.com/data/5edtQ4at/images/fa44a44fc6c5aa2628584b3708754c81aed54e63.png)
 
-- [More Armor Trims](https://legacy.curseforge.com/minecraft/mc-mods/more-armor-trims)
+- [More Armor Trims](https://modrinth.com/mod/more-armor-trims)
 
-![](https://cdn.modrinth.com/data/5edtQ4at/images/5844bee177d3af05ba87ceb48161137e899e57b7.png)
+![](https://cdn.modrinth.com/data/5edtQ4at/images/717161a22ff40b8af2d394a55644ca3c5f5d6567.png)
 
 - [Flower Adornments](https://modrinth.com/datapack/armor-flower-adornments)
 
 ![](https://cdn.modrinth.com/data/5edtQ4at/images/9afde7602bbc4dfa2afb2c0392deca34da62ba8a.png)
+
+## Support this mod
+If you know other mods or datapacks, that add trim **patterns** (materials work automatically), feel free to submit them via a GitHub issue report!

@@ -1,4 +1,2 @@
 ## Added
-- More Armor trims support
-
-*Mod updates before the approval, what an adventure!*
+- Support for trim patterns added in "More Armor Trims" v1.1.0

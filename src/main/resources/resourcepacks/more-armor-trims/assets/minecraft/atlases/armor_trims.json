@@ -6,7 +6,10 @@
       "textures": [
         "more_armor_trims:trims/models/elytra/storm",
         "more_armor_trims:trims/models/elytra/ram",
-        "more_armor_trims:trims/models/elytra/myth"
+        "more_armor_trims:trims/models/elytra/myth",
+        "more_armor_trims:trims/models/elytra/greed",
+        "more_armor_trims:trims/models/elytra/beast",
+        "more_armor_trims:trims/models/elytra/fever"
       ],
       "palette_key": "trims/color_palettes/trim_palette",
       "permutations": {
