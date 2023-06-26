@@ -21,4 +21,4 @@ Install main mod ([Elytra Trims](https://modrinth.com/mod/elytra-trims)) on your
 ![](https://cdn.modrinth.com/data/5edtQ4at/images/9afde7602bbc4dfa2afb2c0392deca34da62ba8a.png)
 
 ## Support this mod
-If you know other mods or datapacks, that add trim **patterns** (materials work automatically), feel free to submit them via a GitHub issue report!
+If you know other mods or datapacks, that add trims, feel free to submit them via a GitHub issue report!

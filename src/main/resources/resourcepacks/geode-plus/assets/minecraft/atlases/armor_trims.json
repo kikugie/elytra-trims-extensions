@@ -4,6 +4,22 @@
       "type": "paletted_permutations",
       "mask": "entity/elytra",
       "textures": [
+        "trims/models/elytra/coast",
+        "trims/models/elytra/sentry",
+        "trims/models/elytra/dune",
+        "trims/models/elytra/wild",
+        "trims/models/elytra/ward",
+        "trims/models/elytra/eye",
+        "trims/models/elytra/vex",
+        "trims/models/elytra/tide",
+        "trims/models/elytra/snout",
+        "trims/models/elytra/rib",
+        "trims/models/elytra/spire",
+        "trims/models/elytra/wayfinder",
+        "trims/models/elytra/raiser",
+        "trims/models/elytra/shaper",
+        "trims/models/elytra/host",
+        "trims/models/elytra/silence",
         "geode_plus:trims/models/elytra/wrap",
         "geode_plus:trims/models/elytra/celeste",
         "geode_plus:trims/models/elytra/heart"
@@ -19,7 +35,10 @@
         "copper": "trims/color_palettes/copper",
         "emerald": "trims/color_palettes/emerald",
         "lapis": "trims/color_palettes/lapis",
-        "amethyst": "trims/color_palettes/amethyst"
+        "amethyst": "trims/color_palettes/amethyst",
+        "wrappist": "geode_plus:trims/color_palettes/wrappist",
+        "celestite": "geode_plus:trims/color_palettes/celestite",
+        "pink_topaz": "geode_plus:trims/color_palettes/pink_topaz"
       }
     }
   ]

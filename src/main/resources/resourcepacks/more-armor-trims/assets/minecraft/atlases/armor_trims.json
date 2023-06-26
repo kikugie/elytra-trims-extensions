@@ -22,7 +22,10 @@
         "copper": "trims/color_palettes/copper",
         "emerald": "trims/color_palettes/emerald",
         "lapis": "trims/color_palettes/lapis",
-        "amethyst": "trims/color_palettes/amethyst"
+        "amethyst": "trims/color_palettes/amethyst",
+        "wrappist": "geode_plus:trims/color_palettes/wrappist",
+        "celestite": "geode_plus:trims/color_palettes/celestite",
+        "pink_topaz": "geode_plus:trims/color_palettes/pink_topaz"
       }
     }
   ]
