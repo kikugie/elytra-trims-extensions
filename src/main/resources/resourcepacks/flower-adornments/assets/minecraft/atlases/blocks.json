@@ -1,24 +1,24 @@
 {
-    "sources": [
-        {
-            "type": "paletted_permutations",
-            "textures": [
-                "cynic:trims/items/elytra_flowers"
-            ],
-            "palette_key": "cynic:trims/color_palettes/trim_palette",
-            "permutations": {
-                "dandelion": "cynic:trims/color_palettes/dandelion",
-                "poppy": "cynic:trims/color_palettes/poppy",
-                "blue_orchid": "cynic:trims/color_palettes/blue_orchid",
-                "allium": "cynic:trims/color_palettes/allium",
-                "azure_bluet": "cynic:trims/color_palettes/azure_bluet",
-                "cornflower": "cynic:trims/color_palettes/cornflower",
-                "pink_petals": "cynic:trims/color_palettes/pink_petals",
-                "torchflower": "cynic:trims/color_palettes/torchflower",
-                "flowering_azalea": "cynic:trims/color_palettes/flowering_azalea",
-                "mangrove_propagule": "cynic:trims/color_palettes/mangrove_propagule",
-                "wither_rose": "cynic:trims/color_palettes/wither_rose"
-            }
-        }
-    ]
+  "sources": [
+    {
+      "type": "paletted_permutations",
+      "textures": [
+        "cynic:trims/items/elytra_flowers"
+      ],
+      "palette_key": "cynic:trims/color_palettes/trim_palette",
+      "permutations": {
+        "dandelion": "cynic:trims/color_palettes/dandelion",
+        "poppy": "cynic:trims/color_palettes/poppy",
+        "blue_orchid": "cynic:trims/color_palettes/blue_orchid",
+        "allium": "cynic:trims/color_palettes/allium",
+        "azure_bluet": "cynic:trims/color_palettes/azure_bluet",
+        "cornflower": "cynic:trims/color_palettes/cornflower",
+        "pink_petals": "cynic:trims/color_palettes/pink_petals",
+        "torchflower": "cynic:trims/color_palettes/torchflower",
+        "flowering_azalea": "cynic:trims/color_palettes/flowering_azalea",
+        "mangrove_propagule": "cynic:trims/color_palettes/mangrove_propagule",
+        "wither_rose": "cynic:trims/color_palettes/wither_rose"
+      }
+    }
+  ]
 }

@@ -9,21 +9,19 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Hashtable;
+import java.util.HashMap;
 import java.util.Map;
 import java.util.function.BooleanSupplier;
 
 public class Loader implements ClientModInitializer {
     public static final String MOD_ID = "elytra-trims-extensions";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-    public final Map<String, BooleanSupplier> PACKS = new Hashtable<>();
     @Override
     public void onInitializeClient() {
-        PACKS.put("geode-plus", () -> FabricLoader.getInstance().isModLoaded("geode_plus"));
-        PACKS.put("more-armor-trims", () -> FabricLoader.getInstance().isModLoaded("more_armor_trims"));
-        PACKS.put("flower-adornments", () -> true);
+        Map<String, BooleanSupplier> packs = new HashMap<>();
+        packs.put("flower-adornments", () -> true);
 
-        FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(container -> PACKS.forEach((pack, condition) -> {
+        FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(container -> packs.forEach((pack, condition) -> {
             if (condition.getAsBoolean()) {
                 LOGGER.info("Registering extension pack: " + pack);
                 ResourceManagerHelper.registerBuiltinResourcePack(
